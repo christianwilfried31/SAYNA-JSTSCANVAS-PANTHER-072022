@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: 'smooth'
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background: $body-bg-1;
+  color: white;
+}
+
+.logo {
+  &:hover {
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
+    transform: scale(1.2);
+    // filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg) brightness(109%) contrast(112%);
+    filter: drop-shadow(0 0 20px red);
+  }
+}
+
+// h1,
+// h3 {
+//   &:hover {
+//     transform: scale(.1);
+//   }
+// }
+
+p {
+  text-align: justify;
+}
